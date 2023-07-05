@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/Cornmanthe3rd-Plex-Other-html-5.ico" type="image/x-icon"> <!--favicon aula 19-->
+    <title>Paragrafos</title>
+      <style> 
+        mark {
+            background-color: lime   
+        }
+    </style>  <!--Assim que fazemos para todos os marks herdar caracteristicas-->
+</head>
+<body>
+     <h1>Paragrafos e quebra de linha</h1>  <!--aula13--> <!--titulos aula 20(esse é um titulo principal)-->
+     <h2>Introdução</h2>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tempore quo quas ipsa eius asperiores necessitatibus sit pariatur aliquid laudantium quasi, id vel minus magni quae laborum numquam corporis nesciunt?</p>
+     <h3>Justifica</h3>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure reprehenderit voluptatem culpa tempora non. Adipisci laboriosam nemo <br> quaerat harum consequuntur, quisquam error enim! Consequatur, ea quos? Accusantium natus corporis fugit.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, perferendis velit quos distinctio est deserunt, exercitationem <br> corporis illum adipisci quod dolores qui rerum ut, sapiente quo quam hic? Culpa, quas!</p>
+     <hr>
+     <p>Voce escrevre um paragrafo de qualquer jeito. Basta colocar tudo no meio do par de tags &lt;p&gt; e &lt;/p&gt;</p> <!--less than / greater than-->
+    <p>Se precisar quebrar o texto em algum lugar especifico <br> como este, voce usa a tag &lt;br&gt;.</p>
+    <p>Vamos adicionar alguns simbolos especiais: <!--os Hs vao de H1 A H6 não vão alem disso-->        
+        &reg;
+        &copy;  <!--aula 14-->
+        &trade;
+        &euro;
+        &pound;
+        &yen;
+        &cent;
+        &Delta;
+        &uparrow;  <!--versão simple é uarr;-->
+
+        <address>Rua dos Bôbos, n° 0 , cidade do Homenzinho Torto</address> <!--AULA21 isso é um exemplo de significado (signfica endereço e tem como foco mostrar que é um endereço e não enfeitar a fonte)-->
+
+        Olha essa imagem   <!--aula 15 a 18-->
+        
+
+        <img src="image/1.png" alt="imagem teste">
+    </p>
+    <p>Formatação de texto</p>
+
+    <p>Nessa frase temos um <b>termo</b> em negrito  <!--não semantica--></p>
+    <p>Nessa frese temos um <strong>Destaque</strong> em negrito <!--semantica--></p>
+    
+    <p>Nessa frase temos um <i>termo</i> em italico <!--não semantica--></p>
+    <p>Nessa frase temos um <em>termo</em> em énfase <!--semantica--></p>
+
+    <h2>Marcador de texto</h2>
+    <p>Podemos criat tambem <mark style="background-color: lime;">um texto marcado</mark> usando a tag mark</p> <!--Aula23 Para alterar a cor não se usa html e sim CSS-->
+
+    <p>Aqui temos outro <mark>texto marcado</mark> no final</p> <!--não herda as caracteristicas do outro mark-->
+
+<h2>Texto grande e pequeno</h2>
+<p>Aqui tem um <big>texto grande</big> e um <small>texto pequeno.</small></p>  <!--tag big não semanica-->
+
+<h2>Texto Excluido</h2>
+    <p>Podemos marcar <del>um texto como excluido</del> para indicar que deve ser lido, porem desconsiderado</p>
+<h2>Texto Inserido</h2>
+    <p>Podemos marcar um <ins>texto como inserido</ins> para dar uma enfase e indicar que ele foi adicionado depois</p>  <!--Da pra usar a tag <u> porem ela não é semantica-->
+<h2>Texto sobrescrito</h2>
+<p>Coisa do tipo x ao quadrado, por exemplo: x<sup>2</sup></p>
+<h2>Texto subescrito</h2>
+<p>Para inserir coisas tipo H2O, por exemplo H<sub>2</sub>O</p>
+<h2>OUTRAS FORMATAÇOES</h2>
+<h2>Codigo-Fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p> <!--aula sobre citaçoes e codigos-->
+
+    <h1>LISTAS HTML</h1>
+    <h2>Listas ordenas</h2>
+    <ol type="I" start="4"> <!--start define em que numero comeca-->  <!--existem tres types ;A ;a ;1 ;i ;I-->
+        <li>Acordar</li>   <!-- o </LI> é opcional não ha obrigação de fechar essa tag-->
+        <li>Escovar os dentes</li>
+        <li>Tomar café</li>
+    </ol>
+    <h2>Listas não ordenadas</h2>
+    <ul type="square">  <!--tres tipos de type square; disc; circle -->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>chuchu</li>
+    </ul>
+    <h2>DESCRICAO</h2>
+    <dl>
+        <dt>hmtl</dt>
+        <dd>Cod de meu ovo</dd>
+    </dl>
+
+        <h2>Minhas linguagens favoritas</h2>
+        <ol>        
+        <li>Antigas</li>
+        <ol type="I">
+            <li>Clipper</li>
+            <li>Virtual</li>
+            <li>delphi</li>
+        </ol>
+            <li>Novas</li>
+            <ol type="i" start="4">
+                <li>JavaScript</li>
+                <li>Php</li>
+                <li>ReactJS</li>
+            </ol>
+        </ol>
+
+        <h2>Meus jogos Favoritos</h2>  <!--segurar atl add varios cursores-->
+        <ol>
+            <li>Play2</li>
+            <ul>
+                <li>GTA SAN ANDREAS</li>
+                <li>BombaPatch</li>
+                <ul>
+                    <li>versão R10 no Flu</li>
+                    <li>Versão CR7 2018 e Bale bolt</li>
+                    <li>Allan jefersson</li>
+                </ul>
+                <li>Pes2016</li>
+            </ul>
+            <li>XBOX</li>
+            <ul>
+                <li>injustice</li>
+                <li>Fifa18</li>
+                <li>MortalKombat</li>
+            </ul>
+            <li>PC</li>
+            <ul>
+                <li>CS:GO</li>
+                <li>LOL</li>
+                <li>MineCraft</li>
+            </ul>
+        </ol>
+        
+    <p>Vamos adicionar alguns emoji:
+        &#x1F596;  <!--&#x cdg para emoji (hexa decimal) -->
+        &#x1F913;
+    </p>
+ 
+    <h1>USANDO LINKS</h1> <!--as tags rel e external servem para externar o link, pra abrir em outra aba-->
+    <p>Voce pode acessar esse video aqui clicando em <a href="https://youtube.com" target="_blank" rel="external">VIDEO</a></p> <!--a tag <a> é a ancora que faz  a interligação e href é a referencia-->
+    <pre>
+        <code> <!--code não organiza codigo com identação tipo(não sabe que isso é um phyton)-->
+            num = int(input('Digite um numero'))
+            if num % 2 == 0:
+                print(f'O numero {num} é PAR')
+            else:
+                print(f'O numero {num} é impar)
+            print('Fim do programa')
+        </code>
+    </pre> <!--PRE pode ser mesclado com o CODE-->
+            <!--shif+tab faz o texto "caminhar" para um lado e para o outro-->
+            <h2>CITAÇÃO</h2>
+            <p>Como diria seu madroga: <q>Prefiro morrer doque perder a vida</q></p> <!--a tag <q> serve para fazer citações, quando usamos essa tag temos semantica, para dar sentido-->
+            <h2>CITAÇÃO COMPLETA</h2>
+            <p>Segundo Nome Autor, no seu livro HTML para Leigos: </p>
+            <blockquote cite="linkdolivro"> <!--esse parametro CITE serve para anexar os links dos direitos-->
+                A diferença entre elemento inline e um bloco de texto é importante. Os elementos HTML neste capitulo descrevem os blocos de texto.
+            </blockquote>
+            <h2>Abreviação</h2>
+            <p>Estou estudando <abbr title="Significado da abreviação">HTML</abbr> e CSS. Estou adorando!</p> <!--dentro da tag vc coloca o siginificado da abreviação aula 24-->
+    <style> body {
+                background-color: aquamarine;   
+            }</style>    <!-- AULA 21EXEMPLO DE: COMO ADD UMA COR NO BACKGROUND DO SITE-->
+</body>
+</html>
